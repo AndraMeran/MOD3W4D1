@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bi-bell,
+.bi-search {
+    font-size: 18px
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+}
+
+.avatar-img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.btn-secondary {
+    background-color: black;
+    border-radius: 0;
+}
+
+.netflix-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.netflix-card:hover {
+    transform: scale(1.1);
+    z-index: 9;
+}
+
+/* impostazione versione desktop*/
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 15%;
+        /* in versione mobile area cliccabile più grande */
+    }
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    transform: scale(1.3);
+    /* icona frecce più grande e visibile */
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.netflixFooter {
+    color: #ffffff;
+    padding: 40px 15px;
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.end {
+    font-size: 8px;
+}
+
+.footerIcons i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.footerIcons i:hover {
+    transform: scale(1.2);
+    /* al passaggio del mouse le icone diventano poco più grandi */
+}
+
+.serviceCode {
+    margin-top: 20px;
+}
+
+.btn-outline-light {
+    border-radius: 0;
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    .footerLinks .row {
+        margin-bottom: 10px;
+    }
+}
